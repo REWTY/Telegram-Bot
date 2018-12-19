@@ -34,7 +34,7 @@ def action(msg):
         telegram_bot.sendAudio(chat_id, audio=open('/home/pi/myprojects/alarm.wav',"rb"))
     
         
-telegram_bot = telepot.Bot('728283591:AAE4QheOsx5sNwB42FSGKwhLWzJ6N5Fqses') 
+telegram_bot = telepot.Bot('PUT YOUR TOKEN HERE') 
 print (telegram_bot.getMe()) #token telegram bot api
 
 MessageLoop(telegram_bot, action).run_as_thread()
